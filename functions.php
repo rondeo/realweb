@@ -45,6 +45,7 @@ function brendiruy_scripts() {
 	wp_enqueue_script( 'owl.js', get_template_directory_uri() . '/libs/owl.carousel/dist/owl.carousel.min.js', array('jquery'), null, false );
 	// wp_enqueue_script( 'owl.js', get_template_directory_uri() . '/libs/photoswipe/dist/photoswipe.min.js', array('jquery'), null, false );
 	// wp_enqueue_script( 'owl.js', get_template_directory_uri() . '/libs/photoswipe/dist/photoswipe-ui-default.min.js', array('jquery'), null, false );
+	// wp_enqueue_script( 'eq-filter', get_template_directory_uri() . '/js/equipment-ajax-filter.js', array('jquery'), null, true );
 	wp_enqueue_script( 'news', get_template_directory_uri() . '/js/news.js', array('jquery'), null, true );
 	wp_enqueue_script( 'cart', get_template_directory_uri() . '/js/cart.js', array('jquery'), null, true );
 	wp_enqueue_script( 'forms', get_template_directory_uri() . '/js/forms.js', array('jquery'), null, true );

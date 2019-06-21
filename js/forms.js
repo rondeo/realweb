@@ -83,7 +83,7 @@ function submitCartForm() {
 						_("cart_form_status").innerHTML = "Сообщение отправленно";
 
 						setTimeout(()=> {
-							window.location.href = "http://realweb.mceh.ru/success/";
+							window.location.href = `${homeUrl}/success/`;
 						}, 4000);
 
 				} else {

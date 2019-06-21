@@ -286,7 +286,7 @@ function cartPageInfo() {
 
 }
 
-if (window.location == "http://localhost:3000/cart/") {
+if (window.location == `${homeUrl}/cart/`) {
 	cartPageInfo();	
 }
 
@@ -450,7 +450,7 @@ function cartPageOrderGenerator() {
 
 } //function cartPageOrderGenerator
 
-if (window.location == "http://localhost:3000/cart/") {
+if (window.location == `${homeUrl}/cart/`) {
 	cartPageOrderGenerator();
 };
 
@@ -464,6 +464,6 @@ function isEmptylocalStorageOrderObj() {
 
 }//function localStorageObjectCheck
 
-if (window.location == "http://localhost:3000/success/") {
+if (window.location == `${homeUrl}/success/`) {
 	clearCart();
 };

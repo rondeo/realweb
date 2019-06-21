@@ -4,7 +4,7 @@
 */
 
 function newsEqualHeightStarter() {
-	if (window.location == "http://localhost:3000/" || window.location == "http://localhost:3000/news/") {
+	if (window.location == `${homeUrl}/` || window.location == `${homeUrl}/news/`) {
 		newsEqualHeight();
 	}
 }
@@ -38,7 +38,7 @@ function newsEqualHeight() {
 */
 
 function newsIndexPageNotHome() {
-	if (window.location != "http://localhost:3000/news/") {
+	if (window.location != `${homeUrl}/news/`) {
 		newsIndexPage();
 	};
 }

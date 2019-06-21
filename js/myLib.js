@@ -525,7 +525,7 @@ function slider1(id) {
 		//Если элементов нет вообще, то убираем весь блок со слайдером, включая заголовок
 		//Проверка URL нужна потому, что элемент DOM mainContainer есть только на странице с конструктором
 		// если этой проверки не делать, то на других страница вывод оборудования работать не будет
-		if (sliderItem.length == 0 && window.location == "http://localhost:3000/internet/") {
+		if (sliderItem.length == 0 && window.location == `${homeUrl}/internet/`) {
 			
 			let mainContainer = sliderContainer.querySelector("." + ClassName.MAIN_CONTAINER);
 			mainContainer.style.display = "none";
@@ -808,7 +808,7 @@ function slider2(id) {
 		//Если элементов нет вообще, то убираем весь блок со слайдером, включая заголовок
 		//Проверка URL нужна потому, что элемент DOM mainContainer есть только на странице с конструктором
 		// если этой проверки не делать, то на других страница вывод оборудования работать не будет
-		if (sliderItem.length == 0 && window.location == "http://localhost:3000/internet/") {
+		if (sliderItem.length == 0 && window.location == `${homeUrl}/internet/`) {
 			
 			let mainContainer = sliderContainer.querySelector("." + ClassName.MAIN_CONTAINER);
 			mainContainer.style.display = "none";

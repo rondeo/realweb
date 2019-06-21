@@ -2,6 +2,7 @@
 window.onload = function() {
 
 
+
 //Объект заказ
 function Order(number) {
 	this.type = undefined;
@@ -49,7 +50,7 @@ if (localStorage.getItem("order") != "" && localStorage.getItem("order") != null
 
 	// //Получаем контейнер отдельного оборудования
 	
-	if (window.location == "http://localhost:3000/tv/") {
+	if (window.location == `${homeUrl}/tv/`) {
 
 		//ТАРИФЫ ТВ
 		button = document.querySelectorAll(".ISwitch");
@@ -66,7 +67,7 @@ if (localStorage.getItem("order") != "" && localStorage.getItem("order") != null
 
 	};
 
-	if (window.location == "http://localhost:3000/equipment/") {
+	if (window.location == `${homeUrl}/equipment/`) {
 
 		//ОБОРУДОВАНИЕ
 		let button = document.querySelectorAll(".ISwitch");
@@ -84,7 +85,7 @@ if (localStorage.getItem("order") != "" && localStorage.getItem("order") != null
 
 	};
 
-	if (window.location == "http://localhost:3000/services/") {
+	if (window.location == `${homeUrl}/services/`) {
 
 		//ДОПОЛНИТЕЛЬНЫЕ СЕРВИСЫ	
 		button = document.querySelectorAll(".ISwitch");
@@ -119,7 +120,7 @@ if (localStorage.getItem("order") != "" && localStorage.getItem("order") != null
 
 }());
 
-if (window.location == "http://localhost:3000/internet/" || "http://localhost:3000/tv/" || "http://localhost:3000/services/" || "http://localhost:3000/equipment/") {
+if (window.location == `${homeUrl}/internet/` || `${homeUrl}/tv/` || `${homeUrl}/services/` || `${homeUrl}/equipment/`) {
 
 let t_cnode = document.querySelectorAll(".t-container");//Формируем список из нужных элементов. Это необходимо, если конструкторов будет несколько на странице
 
@@ -816,7 +817,7 @@ let equipment = (function() {
 		SWITCHER_ACTIVE: "activeSwitcherPlateOrange"
 	};
 
-	if (window.location == "http://localhost:3000/internet/") {
+	if (window.location == `${homeUrl}/internet/`) {
 		//Слайдер 1
 		slider1("#slider-1");		
 		addEquipmentInternet();
@@ -830,7 +831,7 @@ function addEquipmentInternet() {
 		let mainContainer;
 
 		//Получаем контейнер отдельного оборудования
-		if (window.location == "http://localhost:3000/internet/") {
+		if (window.location == `${homeUrl}/internet/`) {
 			let container = document.querySelector("#slider-1");
 			mainContainer = container.querySelectorAll(".eq-ItemContainer");
 		} else {
@@ -913,7 +914,7 @@ let tv = (function() {
 		TV_CHANNEL: "tv-channelBrick"
 	}
 
-	if (window.location == "http://localhost:3000/internet/") {
+	if (window.location == `${homeUrl}/internet/`) {
 		slider2("#slider-2");
 		addEquipmentServices();		
 	}
@@ -928,7 +929,7 @@ let tv = (function() {
 		//Добавляет обрудование в объект заказа - кнопка iSwitcher в слайдере
 
 		//Получаем контейнер отдельного оборудования
-		if (window.location == "http://localhost:3000/internet/") {
+		if (window.location == `${homeUrl}/internet/`) {
 			let container = document.querySelector("#slider-2");
 			mainContainer = container.querySelectorAll(".eq-ItemContainer");
 			
@@ -1066,7 +1067,7 @@ let tv = (function() {
 
 						accordionOpen.call(channelsContainer, panelHeight, padding);
 
-						if (window.location == "http://localhost:3000/internet/") {
+						if (window.location == `${homeUrl}/internet/`) {
 							accordionOpen.call(servicesContainer, channelsSumHeight, padding);//Проблема будет видна, если удалить эту строку	
 						}
 
@@ -1096,7 +1097,7 @@ let tv = (function() {
 
 
 
-if ( window.location == "http://localhost:3000/internet/" || window.location == "http://localhost:3000/tv/" ) {
+if ( window.location == `${homeUrl}/internet/` || window.location == `${homeUrl}/tv/` ) {
 
 	let servicesAddButtons = (function() {
 	//Получим основной контейнер дополнитлеьных услуг
@@ -1164,7 +1165,7 @@ if ( window.location == "http://localhost:3000/internet/" || window.location == 
 
 						//Открывает и закрывает аккордион со слайдером с оборудованием для дополнительных услуг
 						
-						if ( window.location == "http://localhost:3000/internet/" ) {
+						if ( window.location == `${homeUrl}/internet/` ) {
 								showServicesEquipment(switcherPlate, servicesEquipmentContainer);				
 							}
 
@@ -1184,7 +1185,7 @@ if ( window.location == "http://localhost:3000/internet/" || window.location == 
 //Блоки дополнительные сервисы servicesPlus
 
 
-if ( window.location == "http://localhost:3000/internet/" || window.location == "http://localhost:3000/services/" ) {
+if ( window.location == `${homeUrl}/internet/` || window.location == `${homeUrl}/services/` ) {
 
 	let servicesPlusAddButtons = (function() {
 
@@ -1281,20 +1282,20 @@ if ( window.location == "http://localhost:3000/internet/" || window.location == 
 
 
 //Обеспечивает работу кнопки отмена на всех страницах кроме конструктора
-if (window.location != "http://localhost:3000/internet/") {
+if (window.location != `${homeUrl}/internet/`) {
 	let cartContainer = document.querySelector(".cartContainer");
 		//Запускаем функцию отмены заказа при клике на кнопку отмены в миникорзине
 		cartContainer.addEventListener("click", function(event) {
 			if (event.target.classList.contains("miniCartCansel") || event.target.classList.contains("miniCartCanselMobile") || event.target.classList.contains("icon-delete")) {			
 				clearCart();
 				//Переводим свитчеры в положение выкл на страницах
-				if (window.location == "http://localhost:3000/services/") {
+				if (window.location == `${homeUrl}/services/`) {
 					clearIswitchersServicesPlus();
 				};
-				if (window.location == "http://localhost:3000/tv/") {
+				if (window.location == `${homeUrl}/tv/`) {
 					clearIswitchersTV();
 				};
-				if (window.location == "http://localhost:3000/equipment/") {
+				if (window.location == `${homeUrl}/equipment/`) {
 					clearSwitchersEq();
 				};
 			};
@@ -1746,8 +1747,8 @@ $(document).ready(function(){
   		},
   	navClass: ["owl-prev-my","owl-next-my"],
   	navText: ["",""],
-  	stagePadding: 20,
-  	margin: 20
+  	stagePadding: 20
+  	// margin: 20
 
   });
 });

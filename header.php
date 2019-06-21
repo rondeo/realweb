@@ -12,6 +12,9 @@
 	
 	<?php wp_head(); ?>
 	
+	<script type="text/javascript">
+		let homeUrl = "http://localhost:3000";
+	</script>
 
 </head>
 <body>
