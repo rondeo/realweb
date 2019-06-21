@@ -1,0 +1,364 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+	.menu-top-menu-container
+		width: 90%
+	.topMenuList
+		display: none
+	.mobileMenuContainer
+		display: initial
+	.hamburger
+		display: initial
+		position: relative
+	.topMenuButtonContainer
+		position: relative
+	
+	.headerHomeContent
+		.headerHomeContentWrapper
+			width: 70%
+	
+	.iconContainer
+		max-width: 250px
+	
+	.weWorkBlockContainer
+		.weWorkImg
+			>img
+				max-width: 100%
+
+	.productsFormLeftImgContainer
+		>img
+			max-width: 190%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.headerHomeContent
+		.headerHomeContentWrapper
+			margin: 50px 0 0
+		.h1
+			font-size: 50px
+
+	.mobileBlockLeftContainer
+		.icon-arrow-right
+			display: none
+		.icon-arrow-down
+			display: block
+	
+	.iconBlockContainer
+		height: 520px
+		justify-content: space-around		
+	.weWorkBlockContainer
+		height: 330px
+
+	.s-logos	
+		.container
+			.row				
+				img
+					max-width: 80px
+					margin-bottom: 40px
+
+	.productsHeaderTitleContainer
+		.h2
+			font-size: 25px
+	
+	.itemsTabsBodyContainer
+		justify-content: center	
+		.productItemImgContainer
+			max-width: 100%
+	.productItemContent
+		padding: 0 
+		width: 100%
+		.productItemContentHeader
+			margin-top: 20px
+			text-align: center
+	.itemsTabsBodyContainer
+		flex-direction: column
+
+	.productsFormContainer
+		flex-direction: column
+	.productsFormRightContainer
+		width: 100%	
+	.productsFormLeftContainer
+		width: 100%
+		height: 450px
+	.productsFormLeftImgContainer
+		>img
+			width: 1000px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.headerHomeContent
+		.headerHomeContentWrapper
+			width: 100%
+			left: initial
+			text-align: center
+			padding: 0 40px
+		.h1
+			font-size: 40px
+	
+	.headerHomeContentWrapper
+		.headerContentButtonContainer
+			.headerContentButton
+				margin: auto
+			.headerHomeContentMoreInfo
+				display: none
+
+	.mobileBlockLeftContainer
+		padding: 30px 0
+		height: 150px
+	.mobileBlockRightContainer
+		padding: 30px 0
+		height: 180px
+		>div 
+			margin-left: 20px
+		.mobileTextRight
+			position: relative
+			padding-right: 20px
+			z-index: 100
+		.h3
+			font-size: 20px
+		.mobileImg
+			top: 42px
+			right: -80px
+	
+	.iconBlockContainer
+		height: 560px
+	.iconContainer
+		max-width: 180px
+
+	.zamerContainer
+		height: 300px
+
+	.zamerFormContainer
+		.zamerForm, .wpcf7
+			>p 
+				display: flex
+				flex-direction: column
+				justify-content: center
+	.zamerContent .zamerFormContainer .wpcf7 .zamerInput, .zamerContent .zamerFormContainer .zamerForm .zamerInput
+		margin: 0
+	.zamerContent .zamerFormContainer .wpcf7 .zamerSubmit, .zamerContent .zamerFormContainer .zamerForm .zamerSubmit
+		margin: auto
+	.zamerContent
+		.h3
+			font-size: 25px
+		>p
+			letter-spacing: 4px
+			text-transform: uppercase
+			font-size: 12px
+
+	.footerMenuContainer
+		margin-top: 70px
+
+	.homeContactsContainer
+		height: 250px
+		>div
+			padding: 8% 0
+		.homeContactsHeader
+			font-size: 25px
+		.homeContactsPhone
+			font-size: 20px
+		.homeContactsInfo
+			font-size: 14px
+	.mapContainer
+		iframe
+			height: 250px
+	
+	.subHeaderText
+		margin: 0 auto 20px
+	.s-products-header-container
+		flex-direction: column
+	.s-productsHeaderImgContainer
+		// height: 350px
+		.s-productsHeaderImg
+			min-width: initial
+			max-width: 100%
+			bottom: initial
+			top: 0
+	.s-productsHeaderImgContainer, .productsHeaderTitleContainer
+		width: 100%
+	.s-productsHeaderTitleContainer
+		margin-top: initial
+		width: 100%
+		>div
+			padding: 30px 0
+			width: 100%
+			margin: 0 5%
+			.h2
+				font-size: 25px
+			>p
+				font-size: 14px
+	
+	.itemTabs
+		margin: 0	
+
+	.itemTabsHeader
+		margin: 0
+		.itemTab-h
+			font-size: 14px
+			border-bottom: 3px solid transparent
+		.itemTab-h-active
+			line-height: 2.3
+			border-bottom: 3px solid $accent
+		
+ 		
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.topMenuButtonContainer
+		display: none
+
+	.headerHomeContent
+		.headerHomeContentWrapper
+			.headerHomeContentText
+				display: none		
+			.h1
+				font-size: 35px
+		
+			.headerHomeArr
+				>i
+					display: block
+					margin-top: 50px
+
+	.headerHomeContentWrapper
+		.headerContentButtonContainer
+			.headerContentButton
+				margin: auto
+			.headerHomeContentMoreInfo
+				display: none
+	
+	// .s-products
+	// 	padding: 0
+	// 	.h3
+	// 		font-size: 25px
+
+	.subHeaderText
+		padding: 0 20px
+	
+	.weWorkBlockContainer
+		height: 280px
+		.weWorkHeader
+			text-align: center
+			.h3
+				font-size: 25px
+				margin-left: initial
+				&::before
+					content: '\f063'
+					font-size: 20px
+	
+	.iconBlockContainer
+		height: 1100px
+	.iconContainer
+		max-width: 210px
+	
+	.homeContactsContainer
+		// height: 250px
+		>div
+			padding: 12% 0
+		.homeContactsHeader
+			font-size: 25px
+		.homeContactsPhone
+			font-size: 20px
+		.homeContactsInfo
+			font-size: 12px
+	
+	.footerMenuContainer
+		flex-direction: column
+		margin-top: 70px
+		text-align: center
+		>li
+			margin-bottom: 40px
+	.footerCopyright
+		margin-top: 50px
+	
+	.s-products
+		// padding: 30px 0 0
+		.h3
+			font-size: 20px
+
+
+	.s-productsHeaderImgContainer
+		// height: 240px
+		.s-productsHeaderImg
+			max-width: 100%
+	
+	.productItemContent
+		.productItemContentHeader
+			font-size: 20px
+		ul
+			// padding: 0 15px
+	.itemTabsHeader
+		.itemTab-h
+			font-size: 10px
+			border-bottom: 3px solid transparent
+			line-height: 3.2
+		.itemTab-h-active
+			line-height: 3.2
+			border-bottom: 3px solid $accent
+
+	.productsFormLeftContainer
+		height: auto
+	.productsFormLeftImgContainer
+		>img
+		display: none
+	.productsFormLeftHeader
+		position: relative
+		.h3
+			font-size: 20px
+	.productsForm
+		.productFormInputSubmit
+			width: 100%
+	
+	.accordWrapper
+		button.accordion
+			font-size: 16px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.headerHomeContent
+		.headerHomeContentWrapper
+			.headerHomeContentText
+				display: none		
+			.h1
+				font-size: 30px
+	
+	.weWorkBlockContainer
+		height: 250px
+	.iconContainer
+		max-width: 200px
+
+	
+		
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

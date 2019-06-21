@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'CustomRealweb';
+  src:
+    url('fonts/CustomRealweb.ttf?ax69x5') format('truetype'),
+    url('fonts/CustomRealweb.woff?ax69x5') format('woff'),
+    url('fonts/CustomRealweb.svg?ax69x5#CustomRealweb') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'CustomRealweb' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-arrow-up:before {
+  content: "\e91a";
+}
+.icon-delete:before {
+  content: "\e91b";
+}
+.icon-maintenance:before {
+  content: "\e917";
+}
+.icon-router:before {
+  content: "\e918";
+}
+.icon-tv-monitor:before {
+  content: "\e919";
+}
+.icon-television:before {
+  content: "\e915";
+}
+.icon-video:before {
+  content: "\e916";
+}
+.icon-vk-social-network-logo:before {
+  content: "\e914";
+}
+.icon-lightbulb:before {
+  content: "\e913";
+}
+.icon-hands:before {
+  content: "\e90e";
+}
+.icon-support:before {
+  content: "\e90f";
+}
+.icon-credit-card:before {
+  content: "\e910";
+}
+.icon-star:before {
+  content: "\e911";
+}
+.icon-time:before {
+  content: "\e912";
+}
+.icon-right-arrow:before {
+  content: "\e90c";
+}
+.icon-left-arrow:before {
+  content: "\e90d";
+}
+.icon-login-square-arrow-button-outline:before {
+  content: "\e90a";
+}
+.icon-menu-three-horizontal-lines-symbol:before {
+  content: "\e90b";
+}
+.icon-list-menu:before {
+  content: "\e909";
+}
+.icon-menu:before {
+  content: "\e908";
+}
+.icon-login:before {
+  content: "\e907";
+}
+.icon-smartphone-call:before {
+  content: "\e906";
+}
+.icon-internet-tv:before {
+  content: "\e905";
+}
+.icon-wifi-router:before {
+  content: "\e904";
+}
+.icon-more:before {
+  content: "\e901";
+  color: #7383bf;
+}
+.icon-change:before {
+  content: "\e902";
+}
+.icon-wifi:before {
+  content: "\e903";
+}
+.icon-dashboard:before {
+  content: "\e900";
+}

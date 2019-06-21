@@ -1,0 +1,169 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ax69x5') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ax69x5') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ax69x5##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-arrow-up {
+  &:before {
+    content: $icon-chevron-arrow-up; 
+  }
+}
+.icon-delete {
+  &:before {
+    content: $icon-delete; 
+  }
+}
+.icon-maintenance {
+  &:before {
+    content: $icon-maintenance; 
+  }
+}
+.icon-router {
+  &:before {
+    content: $icon-router; 
+  }
+}
+.icon-tv-monitor {
+  &:before {
+    content: $icon-tv-monitor; 
+  }
+}
+.icon-television {
+  &:before {
+    content: $icon-television; 
+  }
+}
+.icon-video {
+  &:before {
+    content: $icon-video; 
+  }
+}
+.icon-vk-social-network-logo {
+  &:before {
+    content: $icon-vk-social-network-logo; 
+  }
+}
+.icon-lightbulb {
+  &:before {
+    content: $icon-lightbulb; 
+  }
+}
+.icon-hands {
+  &:before {
+    content: $icon-hands; 
+  }
+}
+.icon-support {
+  &:before {
+    content: $icon-support; 
+  }
+}
+.icon-credit-card {
+  &:before {
+    content: $icon-credit-card; 
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+.icon-time {
+  &:before {
+    content: $icon-time; 
+  }
+}
+.icon-right-arrow {
+  &:before {
+    content: $icon-right-arrow; 
+  }
+}
+.icon-left-arrow {
+  &:before {
+    content: $icon-left-arrow; 
+  }
+}
+.icon-login-square-arrow-button-outline {
+  &:before {
+    content: $icon-login-square-arrow-button-outline; 
+  }
+}
+.icon-menu-three-horizontal-lines-symbol {
+  &:before {
+    content: $icon-menu-three-horizontal-lines-symbol; 
+  }
+}
+.icon-list-menu {
+  &:before {
+    content: $icon-list-menu; 
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu; 
+  }
+}
+.icon-login {
+  &:before {
+    content: $icon-login; 
+  }
+}
+.icon-smartphone-call {
+  &:before {
+    content: $icon-smartphone-call; 
+  }
+}
+.icon-internet-tv {
+  &:before {
+    content: $icon-internet-tv; 
+  }
+}
+.icon-wifi-router {
+  &:before {
+    content: $icon-wifi-router; 
+  }
+}
+.icon-more {
+  &:before {
+    content: $icon-more;     
+    color: #7383bf;
+  }
+}
+.icon-change {
+  &:before {
+    content: $icon-change; 
+  }
+}
+.icon-wifi {
+  &:before {
+    content: $icon-wifi; 
+  }
+}
+.icon-dashboard {
+  &:before {
+    content: $icon-dashboard; 
+  }
+}
+
