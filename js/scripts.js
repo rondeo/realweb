@@ -1747,8 +1747,8 @@ $(document).ready(function(){
   		},
   	navClass: ["owl-prev-my","owl-next-my"],
   	navText: ["",""],
-  	stagePadding: 20
-  	// margin: 20
+  	// stagePadding: 20
+  	margin: 20
 
   });
 });
