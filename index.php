@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <!-- Карусель на главной -->
-<?php get_template_part( "template-parts/pages-parts/carousel-bootstrap" ) ?>
+<div class="mainSliderContainer">
+	<?php get_template_part( "template-parts/pages-parts/carousel-bootstrap" ) ?>
+</div>
 <!-- END Карусель на главной -->
 
 <!-- Акции на главной -->
