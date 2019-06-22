@@ -5,7 +5,7 @@
     <?php 
             $posts = get_posts( array(
             'category_name'    => 'carousel-home',
-            'order' => 'ASC',
+            'order' => 'DESC',
             'numberposts' => 0,
             'post_type'   => 'post',
             'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
@@ -16,7 +16,7 @@
             ?>
 
       <div>
-        <a href="<?php the_field('slider-link'); ?>">
+        <a href="<?php the_permalink(); ?>">
           <img src="<?php the_field('home-carousel-img'); ?>" data-name="desktop">
           <img src="<?php the_field('home-carousel-img-mobile'); ?>" data-name="mobile">
         </a>
