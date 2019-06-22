@@ -3,7 +3,7 @@
 						
 						<div class="newsItem">
 							<p class="newsItem_sign" style="display: none;">
-							<a href="<?php echo get_permalink(387); ?>">Новости и объявления Realweb</a>
+							<a href="<?php echo get_permalink(388); ?>">Новости и объявления Realweb</a>
 							</p>
 							<img class="newsItem_img" src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php the_title(); ?>" >
 							<p class="newsItem_date"><?php echo get_the_date('j F Y'); ?></p>

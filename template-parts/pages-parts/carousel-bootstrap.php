@@ -16,7 +16,7 @@
             ?>
 
       <div>
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?php the_field('slider-link') ?>">
           <img src="<?php the_field('home-carousel-img'); ?>" data-name="desktop">
           <img src="<?php the_field('home-carousel-img-mobile'); ?>" data-name="mobile">
         </a>
