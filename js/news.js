@@ -10,27 +10,13 @@ function newsEqualHeightStarter() {
 }
 
 function newsEqualHeight() {
-
-	
-
 	let container = document.querySelectorAll(".newsItem");
 	let max = 0;
 
-	for (let i = 0; i < container.length; i++) {
-		if (container[i].scrollHeight > max) {
-			max = container[i].offsetHeight;
-		};
-	};
+	container.forEach( item => item.scrollHeight > max ? max = item.offsetHeight : false );
 
-	for (let i = 0; i < container.length; i++) {
-		container[i].style.height = max + "px";
-	};
-
-
-
-}//function newsEqualHeight
-
-
+	container.forEach( item => item.style.height = max + 'px' ); 
+}
 
 /*
  * Убираем изображение, если новости грузятся на главной
@@ -44,19 +30,13 @@ function newsIndexPageNotHome() {
 }
 
 function newsIndexPage() {
-
 	let img = document.querySelectorAll(".newsItem_img");
 	let sign = document.querySelectorAll(".newsItem_sign");
 
-	for (let i = 0; i < img.length; i++ ) {
-		img[i].style.display = "none";
-		sign[i].style.display = "";
-	};
+	img.forEach(item => { item.style.display = "none" });
 
-}//function newsIndexPage
-
-
-
-newsEqualHeightStarter();
+	sign.forEach(item => { item.style.display = "" });
+}
 
 newsIndexPageNotHome();
+newsEqualHeightStarter();
